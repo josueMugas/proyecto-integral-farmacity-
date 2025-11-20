@@ -269,7 +269,7 @@ def menu():
         elif opcion==9:
             
             prioridad = int(input("ingrese el id del producto al que quiere ponerle prioridad: ")) # pide ID del producto al que agregar prioridad    
-            agregarprioridad(prioridad)  # aplica prioridad (sin WHERE, afecta todos los registros)
+            agregarprioridad(prioridad)  # aplica prioridad (al elemento con el id correspondiente)
             
         elif opcion ==10:
             
@@ -281,4 +281,5 @@ def menu():
             print("opcion incorrecta, intente de nuevo")
             
 agregar_Codigo_Barras()  # genera códigos los de barras en la BD al iniciar
+
 menu()  # inicia el menú interactivo
